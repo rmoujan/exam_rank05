@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SpellBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 15:40:49 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/24 22:40:51 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 13:22:18 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,20 @@
 SpellBook :: SpellBook()
 {
     
+}
 
 SpellBook :: SpellBook(SpellBook const & ref)
 {
-    *this = obj;
+    *this = ref;
 }
 
 SpellBook const &  SpellBook :: operator=(SpellBook const  & obj)
 {
+    (void)obj;
     return (*this);
 }
 
-~SpellBook :: SpellBook()
+SpellBook :: ~SpellBook()
 {
      
 }
@@ -54,17 +56,21 @@ ASpell*  SpellBook :: createSpell(std::string const & name)
 {
     if (name == "Fwoosh")
     {
+       // std::cout <<"01"<<std::endl;
         ASpell *o = new Fwoosh();
         return (o);
         
     }
-    if else (name == "Polymorph")
+    else if (name == "Polymorph")
     {
         ASpell *o = new Polymorph();
+        
+       // std::cout <<"02 and o is "<<o<<std::endl;
         return (o);
     }
-    if else (name == "Fireball")
+    else if (name == "Fireball")
     {
+        //std::cout <<"03"<<std::endl;
         ASpell *o = new Fireball();
         return (o);
     }

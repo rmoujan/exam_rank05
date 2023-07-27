@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ATarget.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 16:14:26 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/23 09:40:22 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 12:35:06 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,10 @@ ATarget :: ~ATarget()
     return type;
 }
 
-void ATarget :: getHitBySpell( ASpell const & obj)const
+void ATarget :: getHitBySpell(ASpell const & obj)const
 {
-    std::cout <<this->type<<" has been "<<obj.getEffects()<<"!"<<std::endl;
+   // std::cout <<"IN GITHITBYSPELL after "<<obj.getName()<<std::endl;
+     std::cout <<this->type<<" has been "<<obj.getEffects()<<"!"<<std::endl;
+  //  std::cout <<"IN GITHITBYSPELL before "<<obj.getEffects()<<std::endl;
+   // std::cout <<"TYPE is "<<this->getType()<<std::endl;
 }

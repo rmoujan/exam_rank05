@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   TargetGenerator.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 22:16:10 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/24 22:38:48 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 11:54:56 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define TARGETGENERATOR_HPP
 
 #include "ATarget.hpp"
+
 #include <vector>
 class TargetGenerator {
 

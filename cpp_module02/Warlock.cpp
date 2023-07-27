@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Warlock.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 10:45:57 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/24 22:11:55 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 12:34:08 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,8 +104,12 @@ void Warlock :: launchSpell(std::string name,  ATarget const & ref)
     */
     ASpell* ptr;
     ptr = this->b->createSpell(name);
+    //std::cout <<"Check Name :: "<<ptr->getName()<<std::endl;
     if (ptr != NULL)
     {
+        //std::cout <<"PTR ==== "<<ptr<<std::endl;
+        //std::cout <<"ref is "<<ref.getType()<<std::endl;
         ptr->launch(ref);
+       // std::cout <<"AFTER LAUNCH "<<std::endl;
     }
 }

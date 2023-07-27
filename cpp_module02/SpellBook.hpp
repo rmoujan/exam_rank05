@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SpellBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 14:53:18 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/24 22:38:38 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 11:39:41 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #define SPELLBOOK_HPP
 
 #include "ASpell.hpp"
+#include "Fwoosh.hpp"
+#include "Polymorph.hpp"
+#include "Fireball.hpp"
 #include <vector>
 class SpellBook {
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ASpell.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 16:28:56 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/23 09:22:41 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 12:34:48 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,7 @@ std::string const & ASpell :: getEffects() const{
 
 void  ASpell ::  launch(const ATarget & obj)const
 {
+  //  std::cout <<"first 1 "<<std::endl;
     obj.getHitBySpell(*this);
+  //  std::cout <<"second 2"<<std::endl;
 }

@@ -1,4 +1,4 @@
-NAME=cpp01
+NAME=cpp02
 CPP=c++
 FALGS=-Wall -Wextra -Werror -std=c++98 -fsanitize=address
 RM=rm -rf
@@ -12,6 +12,7 @@ SRC=ASpell.cpp\
 	Polymorph.cpp\
 	SpellBook.cpp\
 	TargetGenerator.cpp\
+	Fireball.cpp\
 
 OBJ=$(subst .cpp,.o,$(SRC))
 

@@ -3,31 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   TargetGenerator.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*   By: rmoujan <rmoujan@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 22:20:02 by reshe             #+#    #+#             */
-/*   Updated: 2023/07/24 22:30:24 by reshe            ###   ########.fr       */
+/*   Updated: 2023/07/27 13:22:56 by rmoujan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "TargetGenerator.hpp"
+#include "Dummy.hpp"
+#include "BrickWall.hpp"
 
 TargetGenerator :: TargetGenerator()
 {
     
-
-TargetGenerator :: TargetGenerator(const TargetGenerator & obj)
+}
+TargetGenerator :: TargetGenerator(TargetGenerator const  & obj) 
 {
     *this = obj;
 }
 
-TargetGenerator &  TargetGenerator :: operator=(const TargetGenerator & obj)
+TargetGenerator const &  TargetGenerator :: operator=(TargetGenerator const & obj)
 {
+    (void)obj;
     return (*this);
 }
 
-~TargetGenerator :: TargetGenerator()
+TargetGenerator :: ~TargetGenerator()
 {
      
 }
@@ -53,15 +56,15 @@ void  TargetGenerator :: forgetTargetType(std::string const &name)
 
 ATarget*  TargetGenerator ::  createTarget(std::string const &name)
 {
-    if (name == "Dummy")
+    if (name == "Target Practice Dummy")
     {
-        ATarget *o = new Fwoosh();
+        ATarget *o = new Dummy();
         return (o);
         
     }
-    if else (name == "BrickWall")
+    else if  (name == "Inconspicuous Red-brick Wall")
     {
-        ATarget *o = new Polymorph();
+        ATarget *o = new BrickWall();
         return (o);
     }
     return (NULL);
