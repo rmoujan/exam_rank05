@@ -1,0 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   SpellBook.hpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: reshe <reshe@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/23 14:53:18 by reshe             #+#    #+#             */
+/*   Updated: 2023/07/24 22:38:38 by reshe            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef SPELLBOOK_HPP
+#define SPELLBOOK_HPP
+
+#include "ASpell.hpp"
+#include <vector>
+class SpellBook {
+
+    private:
+    std::vector<ASpell*> book;
+    SpellBook(SpellBook const & ref);
+    SpellBook const & operator=(SpellBook const & ref);
+    public:
+    SpellBook();
+    ~SpellBook();
+
+    void learnSpell(ASpell* ptr);
+    void forgetSpell(std::string const &name);
+    ASpell* createSpell(std::string const & name);
+    
+    
+    
+};
+
+#endif
